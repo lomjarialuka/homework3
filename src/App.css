@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080810;
+  color: #fff;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 60px 24px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.hero-tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #e94560;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: clamp(36px, 7vw, 72px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  background: linear-gradient(135deg, #fff 30%, rgba(255,255,255,0.45));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  line-height: 1.05;
+}
+
+.hero-desc {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.45);
+  max-width: 480px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+/* Hero Button (lichess) */
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+  box-shadow: 0 0 40px rgba(233, 69, 96, 0.35);
+}
+
+.hero-btn:hover {
+  background: #c73652;
+  transform: translateY(-2px);
+  box-shadow: 0 0 60px rgba(233, 69, 96, 0.5);
+}
+
+.hero-btn:active {
+  transform: scale(0.97) translateY(0);
+}
+
+/* Cards Grid - responsive */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .main {
+    padding: 40px 16px 60px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .main {
+    padding: 32px 12px 48px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
