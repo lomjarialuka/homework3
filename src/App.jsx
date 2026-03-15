@@ -1,8 +1,8 @@
 import React from "react";
 import { cards } from "./data.js";
-import Card from "./components/card.jsx";
-import Navbar from "./components/navbar.jsx";
-import StatsBar from "./components/statsbar.jsx";
+import Card from "./components/Card.jsx";
+import Navbar from "./components/Navbar.jsx";
+import StatsBar from "./components/Statsbar.jsx";
 import "./App.css";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <main className="main">
         <div className="hero" id="cards">
-          <p className="hero-tag">♟ შახმატის სამყარო</p>
+          <p className="hero-tag"> შახმატის სამყარო</p>
           <h1 className="hero-title">Chess Masters</h1>
           <p className="hero-desc">
             ისტორიის საუკეთესო შახმატელები — დააჭირეთ ქარდს დეტალებისთვის
