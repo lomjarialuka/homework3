@@ -1,5 +1,4 @@
-import React from "react";
-import "./StatsBar.css";
+import "./Statsbar.css";
 
 function StatsBar({ cards }) {
   const avgRating = Math.round(
