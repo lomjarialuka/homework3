@@ -1,8 +1,8 @@
 import React from "react";
 import { cards } from "./data.js";
-import Card from "./components/Card.jsx";
-import Navbar from "./components/Navbar.jsx";
-import StatsBar from "./components/StatsBar.jsx";
+import Card from "./components/card.jsx";
+import Navbar from "./components/navbar.jsx";
+import StatsBar from "./components/statsbar.jsx";
 import "./App.css";
 
 function App() {
